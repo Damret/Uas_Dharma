@@ -1,0 +1,53 @@
+nav {
+    .breadcrumb {
+        padding: 12px 78px;
+        margin: 0;
+    }
+}
+
+.head-content {
+    p {
+        display: inline;
+        font-size: $font-norm;
+    }
+    .container-fluid {
+        padding-left: 78px;
+        padding-right: 78px;
+        margin: 0 auto;
+    }
+    .row {
+        padding: 35px 0 35px;
+    }
+
+    button {
+        padding: 0;
+        font-size: $font-norm;
+        display: inline-block;
+        color: $color-contentB;
+    }
+}
+
+.man-product {
+    overflow: hidden;
+    .row {
+        .banner {
+            img {
+                background-position : center;
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+        .col {
+            padding: 0;
+        }
+        .card-group {
+            .card {
+                border: none;
+                border-radius: 0;
+            }
+            .card-text {
+                margin: 0;
+            }
+        }
+    }
+}

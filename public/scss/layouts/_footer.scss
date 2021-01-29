@@ -1,0 +1,27 @@
+footer {
+    background-color: #fff;
+    color: #000;
+    .container {
+        padding:10px 54px !important;
+        margin: 0 !important;
+    }
+    .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .copy-left {
+            padding: 10px 0;
+            font-size: 12px;
+            p {
+                margin-bottom: 0 !important;
+            }
+        }
+    
+        .copy-right img {
+            padding: 0 0 0 20px;
+            cursor: pointer;
+        }
+    }
+    
+
+}

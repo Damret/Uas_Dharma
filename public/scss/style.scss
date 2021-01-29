@@ -1,0 +1,14 @@
+body {
+    font-family:$base-font !important;
+    font-size: $font-size !important ;
+}
+button {
+    padding:0 0 20px 20px;
+    font-size: $font-display !important;
+    font-weight: 300;
+    border: none;
+    background-color: transparent;
+    color: $color-contentA;
+    cursor: pointer;
+    text-decoration: underline;
+}
