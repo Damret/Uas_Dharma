@@ -14,7 +14,7 @@
         <div class="text-kedua">
             <p>New <br> Colourways</p>
             <p>
-                Reach new height with our latest seasonal collection         
+                Reach new height with our latest seasonal collection
             </p>
         </div>
         <button>Illuminate your next ride ></button>
@@ -53,7 +53,7 @@
                 Drop the heat raise the intensity
             </p>
         </div>
-        <button>Breathe Easy ></button> 
+        <button>Breathe Easy ></button>
     </section>
 
     <section class="bagian6">
@@ -76,10 +76,13 @@
     <section class="bagian8">
         <div class="container-fluid">
             <div class="row">
-              <div class="col">
-                <img src="./Assets/Images/bagian8.jpg" class="img-fluid" alt="Responsive image">
-              </div>
-              <div class="col">
+                @foreach ($catalogue as $item)
+                <div class="col">
+                    <a href="#">{{$item->name}}</a>
+                    <img src="{{ Storage::url($item->image)}}" class="img-fluid" alt="Responsive image">
+                  </div>
+                @endforeach
+              {{-- <div class="col">
                 <img src="./Assets/Images/bagian8a.jpg" class="img-fluid" alt="Responsive image">
               </div>
               <div class="col">
@@ -87,7 +90,7 @@
               </div>
               <div class="col">
                 <img src="./Assets/Images/bagian8a.jpg" class="img-fluid" alt="Responsive image">
-              </div>
+              </div> --}}
             </div>
         </div>
     </section>
@@ -129,7 +132,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="bagian11">
         <div class="row">
             <div class="col">
@@ -139,13 +142,13 @@
                 <p>Born in Melbourne</p>
                 <p>We were born in a city with an
                     <br>
-                    unhealthy obsession with sport, 
+                    unhealthy obsession with sport,
                     <br>
-                    style and coffee. 
+                    style and coffee.
                     <br>
-                    We have our eye on the world, 
+                    We have our eye on the world,
                     <br>
-                    but keep one cleat clipped into 
+                    but keep one cleat clipped into
                     <br>
                     our hometown.
                 </p>
@@ -181,7 +184,7 @@
                 </div>
                 <div class="service-text">
                     <p>Free Express Shipping</p>
-                    <p>On orders over $100 AUD</p>  
+                    <p>On orders over $100 AUD</p>
                     <button>Learn More</button>
                 </div>
             </div>

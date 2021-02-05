@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Catalogue;
 class ProductController extends Controller
 {
     public function index (Request $request) {
-        return view('content');
+        $catalogue = Catalogue::all();
+        return view('content', compact('catalogue'));
     }
     public function man (Request $request) {
         return view('man');

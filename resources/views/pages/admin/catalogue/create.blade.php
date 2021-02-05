@@ -8,7 +8,7 @@
                 <li class="breadcrumb-item active" aria-current="page">Create</li>
             </ol>
         </nav>
-        <form action="{{route('catalogue.store')}}" enctype="multipart/form-data">
+        <form method="POST" action="{{route('catalogue.store')}}" enctype="multipart/form-data">
             @csrf
         <h4>Name</h4>
         <div class="input-group mb-3">

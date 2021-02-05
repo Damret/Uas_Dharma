@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Catalogue;
 use Illuminate\Http\Request;
-use App\Http\Request\Admin\CatalogueRequest;
+use App\Http\Requests\Admin\CatalogueRequest;
 
 class CatalogueController extends Controller
 {
@@ -39,7 +39,7 @@ class CatalogueController extends Controller
     public function store(CatalogueRequest $request)
     {
         $data = $request->all();
-        $data['image'] = $request->file('image')->store('Assets/Image', 'public');
+        $data['image'] = $request->file('image')->store('assets/Image', 'public');
 
         Catalogue::create($data);
         return redirect()->route('catalogue.index');
@@ -80,7 +80,7 @@ class CatalogueController extends Controller
     public function update(Request $request, $id)
     {
         $data = $request->all();
-        $data['image'] = $request->file('image')->store('assets/img', 'public');
+        $data['image'] = $request->file('image')->store('assets/Image', 'public');
 
         $item = Catalogue::findOrFail($id);
         $item->update($data);

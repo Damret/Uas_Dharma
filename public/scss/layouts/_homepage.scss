@@ -2,19 +2,19 @@
     height: 630px;
     background-image: url(../Assets/Images/bagian1.jpg);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     .text-kesatu {
         padding: 250px 0 10px 20px;
         display: flex;
         flex-direction: column;
     }
-     
+
     p {
         margin-bottom: 0;
     }
 
     p:first-child {
-        font-size: $font-big; 
+        font-size: $font-big;
         color: $color-contentA;
         font-weight: 200;
     }
@@ -32,19 +32,19 @@
     height: 630px;
     background-image: url(../Assets/Images/bagian2.jpg);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     .text-kedua {
         padding: 250px 0 10px 20px;
         display: flex;
         flex-direction: column;
     }
-     
+
     p {
         margin-bottom: 0;
     }
 
     p:first-child {
-        font-size: $font-big; 
+        font-size: $font-big;
         color: $color-contentA;
         font-weight: 200;
     }
@@ -78,7 +78,7 @@
         color:$color-contentB;
         font-weight: 300;
         padding-top: 140px;
-        padding-left: 20px; 
+        padding-left: 20px;
         margin: 0;
         line-height: 90px;
     }
@@ -88,7 +88,7 @@
         color: $color-contentB;
         font-weight: 300;
         margin: 0;
-        padding-left: 20px; 
+        padding-left: 20px;
     }
 
     .row{
@@ -115,19 +115,19 @@
     height: 630px;
     background-image: url(../Assets/Images/bagian5a.jpg);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     .text-kesatu {
         padding: 300px 0 10px 20px;
         display: flex;
         flex-direction: column;
     }
-     
+
     p {
         margin-bottom: 0;
     }
 
     p:first-child {
-        font-size: $font-big; 
+        font-size: $font-big;
         color: $color-contentA;
         font-weight: 200;
     }
@@ -156,14 +156,14 @@
 
     .bag7-kiri {
         width: 50%;
-    }    
+    }
     .bag7-kiri h2 {
         font-size: $size-h2;
         font-weight: 500;
         color: #000;
         margin: 0;
     }
-    
+
     .bag7-kanan {
         width: 50%;
     }
@@ -183,17 +183,28 @@
 .bagian8 {
     .col {
         padding: 0;
+        position: relative;
+        a{
+            position: absolute;
+            top: 10%;
+            transform: rotate(90deg);
+            color: $color-contentB;
+            font-size: $font-display;
+        }
+        a::hover {
+            text-decoration: none !important;
+        }
     }
 }
 
 .bagian9 {
-    padding:0 ; 
+    padding:0 ;
     p:first-child {
         font-size: $font-med;
         color:$color-contentB;
         font-weight: 400;
         padding-top: 80px;
-        padding-left: 20px; 
+        padding-left: 20px;
         margin: 0;
     }
     p:nth-child(2) {
@@ -226,7 +237,7 @@
 }
 
 .bagian10 {
-    padding:0; 
+    padding:0;
     background-color:#325949;
 
     p:first-child {
@@ -234,7 +245,7 @@
         color:$color-contentA;
         font-weight: 500;
         padding-top: 80px;
-        padding-left: 20px; 
+        padding-left: 20px;
         margin: 0;
     }
     p:nth-child(2) {
@@ -242,7 +253,7 @@
         color: $color-contentA;
         font-weight: 300;
         margin: 0;
-        padding-left: 20px; 
+        padding-left: 20px;
     }
 
     .row{
@@ -265,13 +276,13 @@
 }
 
 .bagian11 {
-    padding:0 ; 
+    padding:0 ;
     p:first-child {
         font-size: $font-med;
         color:$color-contentA;
         font-weight: 400;
         padding-top: 80px;
-        padding-left: 20px; 
+        padding-left: 20px;
         margin: 0;
     }
     p:nth-child(2) {
@@ -299,7 +310,7 @@
     }
     button {
         margin: 0;
-        color: $color-contentB;
+        color: $color-contentA;
     }
 }
 
@@ -330,7 +341,7 @@
         margin: 0 auto;
         align-items: center;
     }
-    
+
     .service-img {
         padding: 0 0 10px 10px;
         width: 115px;
@@ -339,8 +350,8 @@
             width:60%;
         }
     }
-    
-    .service-text{ 
+
+    .service-text{
         p {
             margin-bottom: 0 !important;
         }
@@ -366,7 +377,7 @@
         display: flex;
         justify-content: space-between;
     }
-    
+
     .info-grid {
         display: grid;
         grid-auto-flow: column;

@@ -25,9 +25,9 @@
                         <img src="{{Storage::url($item->image)}}" alt="image" style="width: 150px" class="img-thumbnail">
                     </td>
                     <td class="d-flex justify-content-end">
-                        <a class="btn btn-warning btn-sm" href="{{route('catalogue.edit')}}" style="padding: 5px 20px; margin: 0 5px; border: none;">Edit</a>
+                        <a class="btn btn-warning btn-sm" href="{{route('catalogue.edit', $item->id)}}" style="padding: 5px 20px; margin: 0 5px; border: none;">Edit</a>
                         <a onclick="return confirm('Apakah anda yakin ingin menghapus ini?')">
-                            <form action="{{route('catalogue.delete', $item->id)}}" method="post" >
+                            <form action="{{route('catalogue.destroy', $item->id)}}" method="post" >
                                 @csrf
                                 @method('delete')
                                 <button class="btn btn-danger btn-sm" type="submit" style="padding: 5px 20px; margin: 0 5px; border: none;">Delete</button>

@@ -514,7 +514,16 @@ header {
     padding: 0; }
 
 .bagian8 .col {
-  padding: 0; }
+  padding: 0;
+  position: relative; }
+  .bagian8 .col a {
+    position: absolute;
+    top: 10%;
+    transform: rotate(90deg);
+    color: #000;
+    font-size: 22px; }
+  .bagian8 .col a::hover {
+    text-decoration: none !important; }
 
 .bagian9 {
   padding: 0; }
@@ -606,7 +615,7 @@ header {
     padding-right: 0; }
   .bagian11 button {
     margin: 0;
-    color: #000; }
+    color: #fff; }
 
 .bagian12 {
   background-color: #f3f3f3;

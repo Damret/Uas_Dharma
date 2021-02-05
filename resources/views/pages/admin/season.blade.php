@@ -35,6 +35,8 @@
             @endforeach
         </tbody>
       </table>
+      {{$datamusim->link}}
+      
       <div class="d-flex justify-content-end" style="margin: 10px">
         <a class="btn btn-success btn-sm" type="submit" href="#" style="padding: 5px 20px; margin: 0 5px;  border: none;">Create</a>
       </div>
